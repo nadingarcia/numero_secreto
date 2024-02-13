@@ -91,6 +91,7 @@ function reiniciarJogo(){
     iniciarJogo();
     limparHistorico();
     limparCampo();
+    document.getElementById('dica').innerText = 'Dica';
 }
 function limparHistorico(){
     exibirTextoNaTela('p2', '');
