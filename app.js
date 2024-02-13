@@ -33,6 +33,7 @@ function iniciarJogo(){
     nummerosSorteados.push(numeroSecreto);
     console.log(nummerosSorteados);
     document.getElementById('iniciar').removeAttribute('disabled')
+    document.getElementById('dica').removeAttribute('disabled')
     exibirTextoNaTela('h1', 'Boa Sorte');
     exibirTextoNaTela('p', `Escolha um número entre 1 e ${numeroMaior}`);
     document.getElementById('reiniciar').setAttribute('disabled','disabled');
@@ -44,7 +45,10 @@ function verificarChute(){
     let chute = document.querySelector('input').value;
     tentativas ++;
     historico.push(chute);
-
+    if (isNaN(chute) || chute === ''){
+        exibirTextoNaTela('p', 'por favor digite um numero valido.');
+        return;
+    }
     if (chute == numeroSecreto){
         exibirTextoNaTela('h1', 'Acertou');
         let palavraTentativas = tentativas > 1? 'tentativas' : 'tentativa';
@@ -64,6 +68,7 @@ function verificarChute(){
     limparCampo();
 }
 }
+
 function exibirHistorico() {
     let historicoTexto = 'Historico dos chutes : ';
     for (let i = 0; i < historico.length; i++){
@@ -89,4 +94,16 @@ function reiniciarJogo(){
 }
 function limparHistorico(){
     exibirTextoNaTela('p2', '');
+}
+
+function mostrarDica(){
+    if (numeroSecreto % 2 === 0){
+        document.getElementById('dica').innerText = 'Tente um numero par';
+    } else {
+        if (numeroSecreto % 3 === 0) {
+            document.getElementById('dica').innerText = 'O numero e divisivel po 3';
+        } else {
+            document.getElementById('dica').innerText = 'O numero é impar e nao divisivel por 3';
+        }
+    }
 }
