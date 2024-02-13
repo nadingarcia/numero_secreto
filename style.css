@@ -109,3 +109,16 @@ button {
     font-size: 32px;
     font-weight: 400;
 }
+ @media screen and (max-width: 600px) {
+    .container__conteudo {
+      flex-direction: column;
+    }
+  
+    .container__imagem-pessoa {
+      max-width: 100%;
+    }
+  
+    .container__informacoes {
+      margin-bottom: 20px;
+    }
+  }
