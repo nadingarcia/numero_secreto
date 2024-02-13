@@ -9,8 +9,8 @@ function exibirTextoNaTela(tag, texto) {
     campo.innerHTML = texto;
 }
 function mensagemInicial(){
-    exibirTextoNaTela('h1', 'Jogo da Adivinhacao');
-    exibirTextoNaTela('p', 'Escolha o nivel de dificuldade para comecar o jogo');
+    exibirTextoNaTela('h1', 'Jogo da Adivinhação);
+    exibirTextoNaTela('p', 'Escolha o nivel de dificuldade para começar o jogo');
 }
 
 mensagemInicial();
@@ -35,7 +35,7 @@ function iniciarJogo(){
     document.getElementById('iniciar').removeAttribute('disabled')
     document.getElementById('dica').removeAttribute('disabled')
     exibirTextoNaTela('h1', 'Boa Sorte');
-    exibirTextoNaTela('p', `Estou pensando em um numero entre 1 e ${numeroMaior}. Voce consegue adivinhar qual é?`);
+    exibirTextoNaTela('p', `Estou pensando em um numero entre 1 e ${numeroMaior}. Você consegue adivinhar qual é?`);
     document.getElementById('reiniciar').setAttribute('disabled','disabled');
     historico = [];
     tentativas = 0;
