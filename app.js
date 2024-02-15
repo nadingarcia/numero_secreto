@@ -102,7 +102,7 @@ function mostrarDica(){
         document.getElementById('dica').innerText = 'Tente um numero par';
     } else {
         if (numeroSecreto % 3 === 0) {
-            document.getElementById('dica').innerText = 'O numero e divisivel po 3';
+            document.getElementById('dica').innerText = 'O numero é divisivel por 3';
         } else {
             document.getElementById('dica').innerText = 'O numero é impar e nao divisivel por 3';
         }
