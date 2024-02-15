@@ -58,11 +58,10 @@ body::before {
     border-radius: 16px;
     background: #1875E8;
     padding: 16px 24px;
-    width: 100%;
+    width: calc(50% - 0.5em);
     font-size: 24px;
     font-weight: 700;
     border: none;
-    margin-top: 2rem;
 }
 
 button:disabled {
@@ -92,8 +91,10 @@ button:disabled {
 
 .container__botoes {
     display: flex;
-    flex-direction: column;
-    row-gap: 1em;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 1em;
+    margin-top: 2rem;
 }
 
 h1 {
