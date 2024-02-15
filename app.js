@@ -37,7 +37,6 @@ function iniciarJogo(){
     exibirTextoNaTela('h1', 'Boa Sorte');
     exibirTextoNaTela('p', `Estou pensando em um numero entre 1 e ${numeroMaior}. Você consegue adivinhar qual é?`);
     document.getElementById('reiniciar').setAttribute('disabled','disabled');
-document.getElementById('dica').innerText = 'Dica';
     historico = [];
     tentativas = 0;
 }
@@ -92,6 +91,7 @@ function reiniciarJogo(){
     iniciarJogo();
     limparHistorico();
     limparCampo();
+    document.getElementById('dica').innerText = 'Dica';
 }
 function limparHistorico(){
     exibirTextoNaTela('p2', '');
