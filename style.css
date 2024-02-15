@@ -27,7 +27,7 @@ body::before {
 }
 
 .container {
-    max-width: 30%;
+    max-width: 90%;
     margin: 30px auto;
     display: flex;
     flex-direction: column;
