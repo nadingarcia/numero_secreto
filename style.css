@@ -39,7 +39,7 @@ body::before {
     background-image: url("img/Ruido.png");
     background-size: 100% 100%;
     position: relative;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 
