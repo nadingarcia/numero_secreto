@@ -9,7 +9,7 @@ function exibirTextoNaTela(tag, texto) {
     campo.innerHTML = texto;
 }
 function mensagemInicial(){
-    exibirTextoNaTela('h1', 'Jogo da Helena');
+    exibirTextoNaTela('h1', 'Jogo de Alfonso');
     exibirTextoNaTela('p', 'Escolha o nivel de dificuldade para começar o jogo');
 }
 
