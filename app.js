@@ -10,7 +10,7 @@ function exibirTextoNaTela(tag, texto) {
 }
 function mensagemInicial(){
     exibirTextoNaTela('h1', 'Jogo da Helena');
-    exibirTextoNaTela('p', 'Escolha o nivel de dificuldade para começar o jogo');
+    exibirTextoNaTela('p', 'Escolha o nivel de dificuldade para começar o jogo<br><br>');
 }
 
 mensagemInicial();
